@@ -1,0 +1,21 @@
+<!--pages/Join/Join.wxml-->
+<view class='Body'>
+  <view class='Img'>
+    <image class='img' style='width:100%;height:100%;'></image>
+  </view>
+  <view class='UserInput'>
+    <view class='Show'>加盟信息填写</view>
+    <view class='UserName'>
+      <view class='Name'>姓名：</view>
+      <input class='name'  placeholder='请填写真实姓名' bindinput="nameInput"></input>
+    </view>
+    <view class='line'></view>
+    <view class='UserPhone'>
+      <view class='Phone'>联系方式：</view>
+      <input class='phone' placeholder='15332119878' bindinput="phoneInput"></input>
+    </view>
+    <view class='line'></view>
+
+    <view class='Submit' bindtap='SureSubmit'>确认提交</view>
+  </view>
+</view>

@@ -1,0 +1,158 @@
+<!--pages/Order/Order.wxml-->
+<view class='Body'>
+  <view class='UserChoose'>
+    <view class='Line1'>
+      <view class='EatIn'>
+        <view class='eatinshow' id='A1' bindtap='Change1'>堂食</view>
+        <view class='UserTouch1'>
+          <image class='TouchImg1' style='width:100%;height:100%;'></image>
+        </view>
+      </view>
+
+      <view class='Order'>
+        <view class='ordershow' id='A2' bindtap='Change1'>预约点餐</view>
+        <view class='UserTouch2'>
+          <image class='TouchImg2' style='width:100%;height:100%;'></image>
+        </view>
+      </view>
+
+      <view class='Distribution'>
+        <view class='distributionshow' id='A3' bindtap='Change1'>配送</view>
+        <view class='UserTouch3'>
+          <image class='TouchImg3' style='width:100%;height:100%;'></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='CutLine'></view>
+    <!-- 点击按钮后 显示线 -->
+    <view class='BottomLine'>
+      <view class="BLine1 {{list==1?'show':'hide'}}" data-list='1'></view>
+      <view class="BLine2 {{list==2?'show':'hide'}}" data-list='2'></view>
+      <view class="BLine3 {{list==3?'show':'hide'}}" data-list='3'></view>
+    </view>
+
+    <view class='Line2'>
+      <view class='Time'>营业时间：7：00-22：00</view>
+      <view class='Seat1'>座位号：</view>
+      <input class='SeatNum'></input>
+      <view class='Seat2'>号</view>
+      <view class='Check'>
+        <image class='CheckImg' style='width:100%;height:100%;'></image>
+      </view>
+    </view>
+  </view>
+
+
+  <!--左侧栏--> 
+  <scroll-view scroll-y="true" class='Left' style="height:{{winHeight}}px;" scroll-top="{{scrollTop}}">
+    <view wx:for="{{leftnav}}" wx:key class='SetMeal {{curNav==index?"select":""}}' data-index="{{index}}" data-id="{{index}}" id="a{{index}}" bindtap='switchRightTab'>{{item.name}}</view>
+    <view style='height:110rpx;'></view>
+  </scroll-view>
+  <!-- 右侧 -->
+  <scroll-view scroll-y="true" class='Right' style="height:{{winHeight}}px;" scroll-into-view="{{scrollTopId}}" scroll-with-animation="true" bindscroll="scroll">
+    <view class='ShowSetMeal'>
+
+      <block wx:for="{{good}}" wx:for-index="key" wx:for-item="value" wx:key>
+        <view class='Show1 wordindex' id='a{{value.id}}'>{{value.name}}</view>
+        <block wx:for='{{value.value}}' wx:key>
+          <view class="list_item" bindtap='RunDetails'>
+            <navigator url="../Details/Details?id={{item.Goods_Id}}&GoodsImg={{item.Goods_Img}}&GoodsTitle={{item.Goods_Title}}&GoodsPrice1={{item.Goods_Price1}}&GoodsPrice2={{item.Goods_Price2}}&GoodsMessage={{item.Goods_Message}}">
+              <view class='Img'>
+                <image src="{{item.Goods_Img}}" style='width:100%;height:100%;' mode="scaleToFill" />
+              </view>
+              <view class='Info'>
+                <view class='Title'>{{item.Goods_Title}}</view>
+                <view class='VIP'>会员：</view>
+                <view class='Price1'>￥{{item.Goods_Price1}}</view>
+                <view class='User'>用户：</view>
+                <view class='Price2'>￥{{item.Goods_Price2}}</view>
+
+                <view class="Run {{item.Goods_List==1?'show':'hide'}}" catchtap="showRule" data-sellingrate="{{item.sellingrate}}" data-name="{{item.Goods_Title}}" data-img="{{item.Goods_Img}}" data-price1="{{item.Goods_Price1}}" data-price2="{{item.Goods_Price2}}" data-id="{{item.Goods_Id}}" data-size="{{item.Goods_Size}}"  data-taste="{{item.Goods_Taste}}" data-list='1'>选规格
+                </view>
+
+                <view class="Run2 {{item.Goods_List==2?'show':'hide'}}" catchtap="showRule2" data-sellingrate="{{item.sellingrate}}" data-name="{{item.Goods_Title}}" data-img="{{item.Goods_Img}}" data-price1="{{item.Goods_Price1}}" data-price2="{{item.Goods_Price2}}" data-id="{{item.Goods_Id}}" data-size="{{item.Goods_Size}}"  data-taste="{{item.Goods_Taste}}">
+                  <image class='Img2' style='width:100%;height:100%;'></image>
+                </view>
+
+                <!-- 动画元素 -->
+                <view class="good_box" hidden="{{hide_good_box}}" style="left: {{bus_x}}px; top: {{bus_y}}px;">
+                  <image src=""></image>
+                </view>
+              </view>
+            </navigator>
+            <view class='clear'></view>
+          </view>
+        </block>
+      </block>
+    
+    </view>
+    <view style='height:80rpx;'></view>
+  </scroll-view>
+
+
+  <!--  弹窗提示  -->
+  <view class="Toast {{isRuleTrue?'isRuleShow':'isRuleHide'}}">
+    <view class='ToastContent'>
+      <view class='ruleName'>{{modelName}}</view>
+      <view class='ruleVIP'>会员:</view>
+      <view class='rulePrice1'>￥{{modelPrice1}}</view>
+      <view class='ruleUser'>用户:</view>
+      <view class='rulePrice2'>￥{{modelPrice2}}</view>
+      <view class='ruleTaste'>{{modelTaste}}</view>
+      <view class='ruletaste{{curNav1==index?"select1":""}}' wx:for='{{modelSize}}' wx:key bindtap='ChooseSize' data-index="{{index}}" data-id="{{index}}" data-name="{{item.name}}" id="a{{index}}">{{item.name}}</view>
+      <!-- 购物车按钮 -->
+      <view class='Cart1' >
+        <view class='Minus' bindtap='minus' disabled="{{minusStatus}}" >
+          <image class='minus' style='width:100%;height:100%;'></image>
+        </view>
+        <view class='Count'>{{GoodsNum}}</view>
+        <view class='Plus' bindtap='plus'>
+          <image class='plus' style='width:100%;height:100%;'></image>
+        </view>
+        <view class='AddCart'>加入购物车</view>
+
+      </view>
+
+      <view class='Hide'>
+        <image style='width:100%;height:100%;' class='ruleHide' bindtap='hideRule'></image>
+      </view>
+    </view>
+  </view>
+
+
+
+
+  <!-- 底部悬浮框 -->
+  <view class="detail-nav">
+    <view class='Cart' bindtap='ShowCartMessage'>
+      <image class='cart' style='width:100%;height:100%;'></image>
+    </view>
+    <view class='detail-num'>{{num}}</view>
+    <view class='ShowTotal'>总价:</view>
+    <view class='Money'>￥{{money}}</view>
+    <view class="Sure" bindtap="BeSure">立即支付</view>
+  </view>
+
+  <!-- 购物车详情 -->
+  <view class='mask-layer' wx:if="{{showPop}}" bindtap='hideModal'></view>
+    <view class='pop-add-cart pop-common' wx:if="{{showPop}}" animation='{{animationData}}'>
+      <!-- <view class='header row'>
+        头部区域
+      </view> -->
+      <scroll-view class='body' scroll-y='true'>
+        <view class='CartLists' >
+          <view class='CartListsName'>{{modelName}}</view>
+          <view class='CartListsPrice1'>￥{{modelPrice1}}</view>
+          <view class='CartListsPrice2'>￥{{modelPrice2}}</view>
+        </view>
+      </scroll-view>
+      <!-- <view class='footer toolbar'>
+        底部区域
+      </view> -->
+  </view>
+
+  
+
+
+</view>

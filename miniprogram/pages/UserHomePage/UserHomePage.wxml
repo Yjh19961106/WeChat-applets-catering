@@ -1,0 +1,186 @@
+<!--pages/UserHomePage/UserHomePage.wxml-->
+<view class='Body'>
+  <!-- 未充值前 -->
+  <view class="NoPay {{list==1?'show':'hide'}}" data-list='1'>
+    <!-- 空白栏 -->
+    <view class='WhiteLine'></view>
+    <!-- 头像ID -->
+    <view class='User'>
+      <view class='UserImg'>
+        <image class='userimg' style='width:100%;height:100%;'></image>
+      </view>
+      <view class='UserId'>用户1326585</view>
+    </view>
+    <!-- 分割线 -->
+    <view class='CutLine'></view>
+    <!-- 点击按钮 -->
+    <view class='UserChoose'>
+      <!-- 办理会员卡 -->
+      <view class='Membership' bindtap='RunMemberCard'>
+        <view class='membership1'>办理会员卡</view>
+        <view class='membership2'>享受会员价</view>
+        <view class='MembershipImg'>
+          <image class='membershipimg' style='width:100%;height:100%' src='../img/VIP.png'></image>
+        </view>
+      </view>
+      <!-- 加盟 -->
+      <view class='Join' bindtap='RunJoin'>
+        <view class='join1'>我要加盟</view>
+        <view class='join2'>线下线上一体化</view>
+        <view class='JoinImg'>
+          <image class='joinimg' style='width:100%;height:100%' src='../img/hand.png'></image>
+        </view>
+      </view>
+    </view>
+    <!-- 又来了4个按钮 -->
+    <view class='FourButton'>
+      <!-- 收货地址 -->
+      <view class='Address'>
+        <view class='address'>
+          <image class='addressimg' style='width:100%;height:100%;' src='../img/address.png'></image>
+        </view>
+        <view class='showaddress'>收货地址</view>
+      </view>
+      <!-- 订单 -->
+      <view class='Lists' bindtap='RunnoCardLists'>
+        <view class='lists'>
+          <image class='listsimg' style='width:100%;height:100%;' src='../img/dingdan.png'></image>
+        </view>
+        <view class='showlists'>订单</view>
+      </view>
+      <!-- 售后 -->
+      <view class='AfterSale'>
+        <view class='aftersale'>
+          <image class='aftersaleimg' style='width:100%;height:100%;' src='../img/shuohou.png'></image>
+        </view>
+        <view class='showaftersale'>售后</view>
+      </view>
+      <!-- 客服 -->
+      <view class='Service'>
+        <view class='service'>
+          <image class='serviceimg' style='width:100%;height:100%;' src='../img/kefu.png'></image>
+        </view>
+        <view class='showservice'>客服</view>
+      </view>
+    </view>
+
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 充值后 -->
+  <view class="pay {{list==2?'show':'hide'}}" data-list='2'>
+  <view class='Pay'>
+    <view class='PCard'>
+      <view class='Pcard1'>
+        <image class='Pcard' style='width:100%;height:100%;' src='../img/huiyuanka.png'></image>
+      </view>
+  </view>
+      <view class='PLogo'>
+        <image class='Plogo' style='width:100%;height:100%;'></image>
+      </view>
+      <view class='PRName'>美食一号店</view>
+      <view class='PUPhone'>13265478965</view>
+      <view class='PID'>VIP\t卡号</view>
+      <view class='Pid'>1235\t66568\t99988</view>
+      <view class='PPower'>当前会员享受打折优惠</view>
+    </view>
+  
+
+  <view class='PReminderPoints'>
+    <view class='PReminderMoney'>
+      <view class='Preminder'>余额</view>
+      <view class='Pmoney'>￥550.00</view>
+    </view>
+    <view class='PUserPoints'>
+      <view class='Puserpoints'>积分</view>
+      <view class='Ppoints'>362</view>
+    </view>
+  </view>
+
+  <view class='Pline'></view>
+
+  <view class='PUserTap'>
+    <view class='PTopUps'>
+      <view class='Ptopups'>
+        <image class='Pimg1' style='width:100%;height:100%;' src='../img/huiyuankachongzhi.png'></image>
+      </view>
+      <view class='Pshow1'>会员卡充值</view>
+    </view>
+
+    <view class='PPayRecord'>
+      <view class='Ppayrecord'>
+        <image class='Pimg2' style='width:100%;height:100%;' src='../img/vipfukuanjilu.png'></image>
+      </view>
+      <view class='Pshow2'>付款记录</view>
+    </view>
+
+    <view class='PTopUpsRecord' bindtap='RunRechargedRecord'>
+      <view class='Ptopupsrecord'>
+        <image class='Pimg3' style='width:100%;height:100%;' src='../img/chongzhijilu.png'></image>
+      </view>
+      <view class='Pshow3'>充值记录</view>
+    </view>
+  </view>
+
+  <view class='Pline1'></view>
+
+  <view class='UsuallyTools'>常用工具</view>
+
+  <view class='Tools'>
+    <view class='Tools1'>
+      <view class='tools1'>
+        <image class='timg1' style='width:100%;height:100%;' src='../img/address.png'></image>
+      </view>
+      <view class='tshow1'>收货地址</view>
+    </view>
+
+    <view class='Tools2' bindtap='RuncardLists'>
+      <view class='tools2'>
+        <image class='timg2' style='width:100%;height:100%;' src='../img/dingdan.png'></image>
+      </view>
+      <view class='tshow2'>订单</view>
+    </view>
+    
+    <view class='Tools3'>
+      <view class='tools3'>
+        <image class='timg3' style='width:100%;height:100%;' src='../img/shuohou.png'></image>
+      </view>
+      <view class='tshow3'>售后</view>
+    </view>
+   
+    <view class='Tools4'>
+      <view class='tools4'>
+        <image class='timg4' style='width:100%;height:100%;' src='../img/kefu.png'></image>
+      </view>
+      <view class='tshow4'>客服</view>
+    </view>
+    
+    <view class='Tools5'>
+      <view class='tools5'>
+        <image class='timg5' style='width:100%;height:100%;' src='../img/jiamenghezuo.png'></image>
+      </view>
+      <view class='tshow5'>加盟合作</view>
+    </view>
+    
+  </view>
+  <!-- 最后 -->
+  <view class='Last'></view>
+  </view>
+</view>

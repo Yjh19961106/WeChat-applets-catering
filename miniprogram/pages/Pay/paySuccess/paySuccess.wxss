@@ -1,0 +1,90 @@
+/* pages/Pay/paySuccess/paySuccess.wxss */
+page {
+  background: #fafafa;
+}
+.Block1 {
+  width: 100vw;
+  height: 433rpx;
+  background: white;
+
+}
+.Img {
+  width: 175rpx;
+  height: 175rpx;
+  left: 279rpx;
+  top: 100rpx;
+  position: absolute;
+}
+.SuccessToast {
+  color: #debb7b;
+  font-size: 32rpx;
+  text-align: center;
+  top: 320rpx;
+  position: relative;
+}
+.Block2 {
+  width: 100vw;
+  height: 328rpx;
+  margin-top: 18rpx;
+  background: white;
+
+}
+.ListShow {
+  font-size: 30rpx;
+  color: #333333;
+  left: 40rpx;
+  top: 26rpx;
+  position: relative;
+}
+.ListNum {
+  font-size: 26rpx;
+  color: #555555;
+  left: 40rpx;
+  top: 58rpx;
+  position: relative;
+}
+.ListTime {
+  left: 40rpx;
+  font-size: 26rpx;
+  color: #555555;
+  top: 70rpx;
+  position: relative;
+}
+.ListMoney {
+  left: 40rpx;
+  font-size: 26rpx;
+  color: #555555;
+  position: relative;
+  top: 82rpx;
+}
+.ListPay {
+  left: 40rpx;
+  font-size: 26rpx;
+  color: #555555;
+  position: relative;
+  top: 94rpx;
+}
+.ListCall {
+  width: 161rpx;
+  height: 63rpx;
+  background: #fec360;
+  border-radius: 32rpx;
+  font-size: 26rpx;
+  color: #fefefe;
+  left: 560rpx;
+  top: 85rpx;
+  position: relative;
+}
+.PhoneImg {
+  width: 26rpx;
+  height: 26rpx;
+  border: 1rpx solid black;
+  left: 14rpx;
+  top: 19rpx;
+  position: relative;
+}
+.ShowListCall {
+  left: 45rpx;
+  bottom: 19rpx;
+  position: relative;
+}

@@ -1,0 +1,114 @@
+<!--pages/lists/waitWX/waitWX.wxml-->
+<view class='Body'>
+  <view class='Block1'>
+    <view class='Time'>
+      <view class='time1'>1</view>
+      <view class='time2'>5</view>
+      <view class='and'>:</view>
+      <view class='time3'>0</view>
+      <view class='time4'>0</view>
+    </view>
+
+    <view class='User'>
+      <view class='UserImg'>
+        <image class='userimg' style='width:100%;height:100%;'></image>
+      </view>
+      <view class='UserName'>65464899</view>
+      <view class='UserPhoneImg'>
+        <image class='userphoneimg' style='width:100%;height:100%;'></image>
+      </view>
+      <view class='UserPhone'>13351003782</view>
+    </view>
+
+    <view class='Message'>
+      <view class='message'>点餐座位号：116桌</view>
+    </view>
+
+  </view>
+
+  <view class='Block2'>
+    <view class='StoreName'>
+      <view class='LeftImg'>
+        <image class='leftimg' style='width:100%;height:100%;'></image>
+      </view>
+      <view class='Name'>星期天火锅堂食点餐（一曼街店）</view>
+      <view class='RightImg'>
+        <image class='rightimg' style='width:100%;height:100%;'></image>
+      </view>
+    </view>
+
+    <view class='BuyList'>
+      <view class='buylist'>已购商品</view>
+      <view class='buything'>共4件</view>
+    </view>
+
+    <view class='CutLine'></view>
+
+    <view class='Thing'>
+      <view class='Things' wx:for="{{things}}" wx:key>
+        <view class='things'>{{item.name}}</view>
+        <view class='thingsnum'>x{{item.num}}</view>
+        <view class='thingsmoney'>￥{{item.money}}</view>
+      </view>
+    </view>
+    <view class='CutLine'></view>
+
+    <view class='Spread'>
+      <view class='spread'>展开</view>
+      <view class='spreadImg'>
+        <image class='spreadimg' style='width:100%;height:100%;'></image>
+      </view>
+    </view>
+
+  </view>
+
+  <view class='Block3'>
+    <view class='PS'>备注：</view>
+    <view class='ps'>不要辣</view>
+  </view>
+
+  <view class='Block4' >
+    <view class='TrueMoney'>
+      <view class='truemoney'>原价</view>
+      <view class='tmoney'>￥：550.00</view>
+    </view>
+
+    <view class='TrueMoney'>
+      <view class='truemoney'>会员优惠</view>
+      <view class='tmoney'>-￥：0.00</view>
+    </view>
+
+    <view class='TrueMoney'>
+      <view class='truemoney'>会员卡支付</view>
+      <view class='tmoney'>-￥：0.00</view>
+    </view>
+  </view>
+
+  <view class='Block5'>
+    <view class='ListNum'>
+      <view class='listnum'>订单编号：</view>
+      <view class='list_num'>326548973521</view>
+    </view>
+
+    <view class='ListTime'>
+      <view class='listtime'>下单时间：</view>
+      <view class='list_Date'>2019-03-03</view>
+      <view class='list_time'>12:12:10</view>
+    </view>
+
+    <view class='ListPay'>
+      <view class='listpay'>支付方式：</view>
+      <view class='list_pay'>微信</view>
+    </view>
+  
+  </view>
+
+  <view class='Block6'>
+    <view class='Cheaper'>已优惠：￥0.00</view>
+    <view class='AllMoney'>合计：￥500.00</view>
+    <view class='Pay'>立即支付</view>
+  </view>
+
+
+</view>
+

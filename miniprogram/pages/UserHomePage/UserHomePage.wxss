@@ -1,0 +1,253 @@
+/* pages/UserHomePage/UserHomePage.wxss */
+page {
+  width: 100vw;
+  height: 100vh;
+}
+.WhiteLine {
+  width: 750rpx;
+  height: 10rpx;
+  background: linear-gradient(#f3f3f3 , #fff);
+}
+.User {
+  width: 750rpx;
+  height: 270rpx;
+}
+.UserImg {
+  width: 169rpx;
+  height: 169rpx;
+  border-radius: 50%;
+  margin-top: 28rpx;
+  margin-left: 290.5rpx;
+  border: 1rpx solid black;
+}
+.UserId {
+  margin-top: 30rpx;
+  font-size: 27rpx;
+  text-align: center;
+}
+.CutLine {
+  border: 1rpx solid #e5e5e5;
+  width: 690rpx;
+  margin-left: 30rpx;
+}
+.UserChoose {
+  height: 200rpx;
+  width: 750rpx;
+}
+.Membership ,.Join {
+  width: 320rpx;
+  height: 133rpx;
+  float: left;
+  margin-top: 23rpx;
+  border: 1rpx solid #fceacc;
+  box-shadow: #fcedd3 2px 2px 2px ;
+  border-radius: 15px;
+}
+.Membership {
+  margin-left: 30rpx;
+}
+.Join {
+  margin-left: 40rpx;
+}
+.membership1 ,.join1 {
+  font-size: 27rpx;
+  color: #d8ad60;
+  margin-top: 32rpx;
+  margin-left: 40rpx;
+}
+.membership2 ,.join2 {
+  font-size: 25rpx;
+  color: #e0bd80;
+  margin-left: 40rpx;
+}
+.MembershipImg ,.JoinImg {
+  width: 93rpx;
+  height: 62rpx;
+  float: right;
+  margin-top: -60rpx;
+  margin-right: 10rpx;
+}
+.FourButton {
+  width: 690rpx;
+  height: 110rpx;
+  margin-left: 30rpx;
+  
+}
+.Address ,.Lists ,.AfterSale ,.Service {
+  width: 25%;
+  height: 110rpx;
+  float: left;
+  display: block;
+  text-align: center;
+  font-size: 26rpx;
+}
+.address ,.lists ,.aftersale ,.service {
+  width: 56rpx;
+  height: 56rpx;
+  margin-left: 56rpx;
+}
+.showaddress ,.showlists ,.showaftersale ,.showservice {
+  margin-top: 10rpx;
+}
+
+
+
+
+
+
+
+
+
+.Pay {
+  background: #fef4e2;
+}
+.PCard {
+  width: 750rpx;
+  height: 372rpx;
+ 
+}
+.Pcard1 {
+  width: 686rpx;
+  left: 40rpx;
+  height: 372rpx;
+  top: 20rpx;  
+  position: absolute;
+}
+
+.PLogo {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  border: 1rpx solid black;
+  left: 70rpx;
+  top: 40rpx;
+  position: absolute;
+}
+.PRName ,.PUPhone ,.PID ,.Pid ,.PPower{
+  color: white;
+  position: absolute;
+  left:192rpx;
+  top: 55rpx;
+  font-size: 30rpx;
+}
+.PUPhone {
+  left: 192rpx;
+  top: 98rpx;
+  font-size: 25rpx;
+}
+.PID {
+  left: 70rpx;
+  top: 170rpx;
+}
+.Pid {
+  left: 204rpx;
+  top: 170rpx;
+}
+.PPower {
+  left: 80rpx;
+  top: 290rpx;
+}
+.PReminderPoints {
+  width: 750rpx;
+  height: 108rpx;
+  background: white;
+  
+}
+.PReminderMoney ,.PUserPoints {
+  width: 370rpx;
+  height: 108rpx;
+  /* border: 1rpx solid firebrick; */
+  display: inline-block;
+  font-size: 30rpx;
+}
+.PUserPoints {
+  border: 1rpx solid #d69e3f;
+  border-bottom-style: none;
+  border-right-style: none;
+  border-top-style: none;
+}
+.Preminder ,.Puserpoints {
+  text-align: center;
+  margin-top: 15rpx;
+
+}
+.Pmoney ,.Ppoints {
+  text-align: center;
+  color: #debb7b;
+}
+.Pline ,.Pline1 {
+  width: 750rpx;
+  height: 20rpx;
+  background: #f5f4f3;
+}
+.Pline1 {
+  height: 5rpx;
+}
+.PUserTap {
+  width: 750rpx;
+  height: 180rpx;
+  background: white;
+}
+.PTopUps ,.PPayRecord ,.PTopUpsRecord {
+  width: 33.3%;
+  height: 150rpx;
+  /* float: left; */
+  display: inline-block;
+  font-size: 26rpx;
+}
+.Ptopups ,.Ppayrecord ,.Ptopupsrecord {
+  width: 72rpx;
+  height: 60rpx;
+  margin-left: 89rpx;
+  margin-top: 27rpx;
+}
+.Pshow1 ,.Pshow2 ,.Pshow3 {
+  text-align: center;
+  margin-top: 20rpx;
+}
+.UsuallyTools {
+  font-size: 30rpx;
+  width: 750rpx;
+  height: 75rpx;
+  border: dotted 1rpx #d49935;
+  border-style: none none dotted none;
+  padding-left: 30rpx;
+  line-height: 75rpx;
+  background: white;
+}
+.Tools {
+  width: 640rpx;
+  height: 177rpx;
+  font-size: 26rpx;
+  margin-left: 55rpx;
+  background: white;
+}
+.Tools1 ,.Tools2 ,.Tools3 ,.Tools4 ,.Tools5 {
+  width: 20%;
+  height: 177rpx;
+  float: left;
+}
+.tools1 ,.tools2 ,.tools3 ,.tools4 ,.tools5 {
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.tshow1 ,.tshow2 ,.tshow3 ,.tshow4 ,.tshow5 {
+  text-align: center;
+  margin-top: 5rpx;
+}
+.Last {
+  width: 750rpx;
+  height: 174rpx;
+  background: #f5f4f3;
+}
+
+
+
+
+
+.hide {
+  display: none;
+}

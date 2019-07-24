@@ -1,0 +1,54 @@
+<!--pages/Details/Details.wxml-->
+<view class='Body'>
+  <view class='Img'>
+    <image class='img' style='width:100%;height:100%;' src='{{GoodsImg}}'></image>
+  </view>
+  <view class='Name'>{{GoodsTitle}}</view>
+  <view class='VIP'>会员:</view>
+  <view class='Price1'>￥{{GoodsPrice1}}</view>
+  <view class='User'>用户:</view>
+  <view class='Price2'>￥{{GoodsPrice2}}</view>
+  <view class='Add1'>
+    <image class='add1' style='width:100%;height:100%;'></image>
+  </view>
+  <view class='Message'>商品介绍</view>
+  <view class='AddOrSubtract'>
+    <view class='Subtract'>
+      <image class='subtract' style='width:100%;height:100%;'></image>
+    </view>
+    <view class='Num'>1</view>
+    <view class='Add2'>
+      <image class='add2' style='width:100%;height:100%;'></image>
+    </view>
+  </view>
+  <view class='message'>{{GoodsMessage}}</view>
+
+  <!-- 底部悬浮框 -->
+  <view class="detail-nav">
+    <view class='Cart' bindtap='ShowCartMessage'>
+      <image class='cart' style='width:100%;height:100%;'></image>
+    </view>
+    <view class='detail-num'>{{num}}</view>
+    <view class='ShowTotal'>总价:</view>
+    <view class='Money'>￥{{money}}</view>
+    <view class="Sure" bindtap="BeSure">立即支付</view>
+  </view>
+
+  <!-- 购物车详情 -->
+  <view class='mask-layer' wx:if="{{showPop}}" bindtap='hideModal'></view>
+    <view class='pop-add-cart pop-common' wx:if="{{showPop}}" animation='{{animationData}}'>
+      <!-- <view class='header row'>
+        头部区域
+      </view> -->
+      <scroll-view class='body' scroll-y='true'>
+        <view class='CartLists' >
+          <view class='CartListsName'>{{modelName}}</view>
+          <view class='CartListsPrice1'>￥{{modelPrice1}}</view>
+          <view class='CartListsPrice2'>￥{{modelPrice2}}</view>
+        </view>
+      </scroll-view>
+      <!-- <view class='footer toolbar'>
+        底部区域
+      </view> -->
+  </view>
+</view>

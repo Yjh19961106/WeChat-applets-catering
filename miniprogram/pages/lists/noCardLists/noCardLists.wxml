@@ -1,0 +1,128 @@
+<!--pages/lists/noCardLists/noCardLists.wxml-->
+<view class='Body'>
+  <view class='FirstList'>
+    <view class='AllLists' id='A1' bindtap='Change1'>全部订单</view>
+    <view class='NoPayLists' id='A2' bindtap='Change1'>待支付订单（{{ListNum1}}）</view>
+    <view class='NoGetLists' id='A3' bindtap='Change1'>待取订单（{{ListNum2}}）</view>
+  </view>
+  <view class='Line'>
+    <view class="Line1 {{list==1?'show':'hide'}}" data-list='1'></view>
+    <view class="Line2 {{list==2?'show':'hide'}}" data-list='2'></view>
+    <view class="Line3 {{list==3?'show':'hide'}}" data-list='3'></view>
+  </view>
+
+  <view class="show1 {{list==1?'show':'hide'}}" data-list='1'>
+    <view class='AllListshow' wx:for="{{List}}" wx:key  bindlongpress='LongTap'  data-index="{{index}}">
+      <view class='List'>
+        <view class='ListNum'>订单号：{{item.num}}</view>
+        <view class="ListCondition {{item.id==1?'show':'hide'}}" >{{item.con}}</view>
+        <view class="ListCondition1 {{item.id==2?'show':'hide'}}" >{{item.con}}</view>
+        <view class="ListCondition2 {{item.id==3?'show':'hide'}}" >{{item.con}}</view>
+      </view>
+      <view class='ListMessage'>
+        <view class='Listmessage'>{{item.mes}}</view>
+        <view class='Listmoney'>￥{{item.mon}}</view>
+      </view>
+      <view class='ListDate'>
+        <view class='Listdate'>{{item.date}}</view>
+        <view class="Tap1 {{item.id==1?'show':'hide'}}" catchtap='RunwxPay' >立即支付</view>
+        <view class="Tap2 {{item.id==2?'show':'hide'}}" catchtap='RunnoGet' >领取详情</view>
+        <view class="Tap3 {{item.id==3?'show':'hide'}}" catchtap='Runfinish'>查看详情</view>
+      </view>
+    </view>
+  </view>
+  <!-- 判断待支付订单页面 是否显示 -->
+  <view class="show1 {{list==2?'show':'hide'}}" data-list='2' >
+    <view class='AllListshow' wx:for="{{List}}" wx:key wx:if='{{item.id == 1}}'>
+      <view class='List'>
+        <view class='ListNum'>订单号：{{item.num}}</view>
+        <view class="ListCondition {{item.id==1?'show':'hide'}}" >{{item.con}}</view>
+        <view class="ListCondition1 {{item.id==2?'show':'hide'}}" >{{item.con}}</view>
+        <view class="ListCondition2 {{item.id==3?'show':'hide'}}" >{{item.con}}</view>
+      </view>
+      <view class='ListMessage'>
+        <view class='Listmessage'>{{item.mes}}</view>
+        <view class='Listmoney'>￥{{item.mon}}</view>
+      </view>
+      <view class='ListDate'>
+        <view class='Listdate'>{{item.date}}</view>
+        <view class="Tap1 {{item.id==1?'show':'hide'}}" catchtap='RunwxPay' >立即支付</view>
+        <view class="Tap2 {{item.id==2?'show':'hide'}}" catchtap='RunnoGet' >领取详情</view>
+        <view class="Tap3 {{item.id==3?'show':'hide'}}" catchtap='Runfinish'>查看详情</view>
+      </view>
+    </view>
+    <!-- 判断待支付订单页面 是否显示  -->
+    <view class='AllListshow' style='display:none;' wx:for="{{List}}" wx:key wx:if='{{item.id==2&&item.id==3}}'>
+      <view class='List'>
+        <view class='ListNum'>订单号：{{item.num}}</view>
+        <view class="ListCondition {{item.id==1?'show':'hide'}}" >{{item.con}}</view>
+        <view class="ListCondition1 {{item.id==2?'show':'hide'}}" >{{item.con}}</view>
+        <view class="ListCondition2 {{item.id==3?'show':'hide'}}" >{{item.con}}</view>
+      </view>
+      <view class='ListMessage'>
+        <view class='Listmessage'>{{item.mes}}</view>
+        <view class='Listmoney'>￥{{item.mon}}</view>
+      </view>
+      <view class='ListDate'>
+        <view class='Listdate'>{{item.date}}</view>
+        <view class="Tap1 {{item.id==1?'show':'hide'}}" catchtap='RunwxPay' >立即支付</view>
+        <view class="Tap2 {{item.id==2?'show':'hide'}}" catchtap='RunnoGet' >领取详情</view>
+        <view class="Tap3 {{item.id==3?'show':'hide'}}" catchtap='Runfinish'>查看详情</view>
+      </view>
+    </view>
+  </view>
+
+
+
+  <!-- 判断待取订单 是否显示 -->
+  <view class="show1 {{list==3?'show':'hide'}}" data-list='2'>
+    <view class='AllListshow' wx:for="{{List}}" wx:key wx:if='{{item.id == 2}}'>
+      <view class='List'>
+        <view class='ListNum'>订单号：{{item.num}}</view>
+        <view class="ListCondition {{item.id==1?'show':'hide'}}" >{{item.con}}</view>
+        <view class="ListCondition1 {{item.id==2?'show':'hide'}}" >{{item.con}}</view>
+        <view class="ListCondition2 {{item.id==3?'show':'hide'}}" >{{item.con}}</view>
+      </view>
+      <view class='ListMessage'>
+        <view class='Listmessage'>{{item.mes}}</view>
+        <view class='Listmoney'>￥{{item.mon}}</view>
+      </view>
+      <view class='ListDate'>
+        <view class='Listdate'>{{item.date}}</view>
+        <view class="Tap1 {{item.id==1?'show':'hide'}}" catchtap='RunwxPay' >立即支付</view>
+        <view class="Tap2 {{item.id==2?'show':'hide'}}" catchtap='RunnoGet' >领取详情</view>
+        <view class="Tap3 {{item.id==3?'show':'hide'}}" catchtap='Runfinish'>查看详情</view>
+      </view>
+    </view>
+    <!-- 判断待领取订单页面 是否显示  -->
+    <view class='AllListshow' style='display:none;' wx:for="{{List}}" wx:key wx:if='{{item.id==1&&item.id==3}}'>
+      <view class='List'>
+        <view class='ListNum'>订单号：{{item.num}}</view>
+        <view class="ListCondition {{item.id==1?'show':'hide'}}" >{{item.con}}</view>
+        <view class="ListCondition1 {{item.id==2?'show':'hide'}}" >{{item.con}}</view>
+        <view class="ListCondition2 {{item.id==3?'show':'hide'}}" >{{item.con}}</view>
+      </view>
+      <view class='ListMessage'>
+        <view class='Listmessage'>{{item.mes}}</view>
+        <view class='Listmoney'>￥{{item.mon}}</view>
+      </view>
+      <view class='ListDate'>
+        <view class='Listdate'>{{item.date}}</view>
+        <view class="Tap1 {{item.id==1?'show':'hide'}}" catchtap='RunwxPay' >立即支付</view>
+        <view class="Tap2 {{item.id==2?'show':'hide'}}" catchtap='RunnoGet' >领取详情</view>
+        <view class="Tap3 {{item.id==3?'show':'hide'}}" catchtap='Runfinish'>查看详情</view>
+      </view>
+    </view>
+  </view>
+
+  <!--  弹窗提示  -->
+  <view class="Toast {{isRuleTrue?'isRuleShow':'isRuleHide'}}">
+    <view class='ToastContent'>
+      <view class='showtoast'>确认删除订单?</view>
+      <view class='showbtn'>
+        <text class='Toastcancel' bindtap='cancel'>取消</text> 
+        <text class='Toastdelete' bindtap='delete_d'>删除</text>   
+      </view>
+    </view>
+  </view>
+</view>

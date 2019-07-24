@@ -1,0 +1,32 @@
+<!--pages/trade/totalmoney/totalmoney.wxml-->
+<view class='Body'>
+  <view class='Block1'>
+    <view class='ShowMoney'>店铺总交易额\n（元）</view>
+    <view class='Money'>{{m}}</view>  
+  </view>
+  <view class='WhiteLine'></view>
+  <view class='Block2'>
+    <view class='Date'>时间日期</view>
+    <view class='Trade'>超市交易</view>
+    <view class='Person'>个人盈利</view>
+  </view>
+
+  <view class='Block3' wx:for="{{ListMoney}}" wx:key>
+    <block wx:if="{{item.background == 1}}">
+    <view class='item' style='background:#ffe7d6;'>
+      <view class='date'>{{item.date}}</view>
+      <view class='trade'>{{item.trade}}</view>
+      <view class='person'>{{item.person}}</view>
+    </view>
+    </block>
+    <block wx:else>     
+      <view class='item' >
+      <view class='date'>{{item.date}}</view>
+      <view class='trade'>{{item.trade}}</view>
+      <view class='person'>{{item.person}}</view>
+    </view>
+    </block>
+  </view>
+
+
+</view>

@@ -1,0 +1,4 @@
+<!--pages/RechargedRecord/RechargedRecord.wxml-->
+<view class='Body'>
+  <view class='List'></view>
+</view>

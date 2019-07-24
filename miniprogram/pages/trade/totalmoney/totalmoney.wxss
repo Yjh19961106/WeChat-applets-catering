@@ -1,0 +1,75 @@
+/* pages/trade/totalmoney/totalmoney.wxss */
+.Block1 {
+  width: 750rpx;
+  height: 255rpx;
+  background: #ffe7d6;
+}
+.ShowMoney {
+  font-size: 26rpx;
+  color: #333333;
+  left: 33rpx;
+  top: 44rpx;
+  position: absolute;
+}
+.Money {
+  color: #c60000;
+  font-size: 70rpx;
+  line-height: 54rpx;
+  left: 33rpx;
+  width: 51rpx;
+  top: 121rpx;
+  position: absolute;
+}
+.WhiteLine {
+  height: 10rpx;
+  width: 100vw;
+  background: #f5f5f5;
+}
+.Block2 {
+  width: 750rpx;
+  height: 93rpx;
+}
+.Date ,.Trade ,.Person {
+  float: left;
+  font-size: 26rpx;
+  color: #333333;
+  top: 292rpx;
+  position: absolute;
+}
+.Date {
+  left: 41rpx;
+}
+.Trade {
+  left: 323rpx;
+}
+.Person {
+  left: 600rpx;
+}
+.item {
+  height: 98rpx;
+  width: 100vw;
+  border: 1rpx solid red;
+  color: #c60000;
+  font-size: 26rpx;
+}
+.date {
+  left: 35rpx;
+  top: 20rpx;
+  position: relative;
+  color: #333333;
+  font-size: 24rpx;
+  height: 25rpx;
+  width: 150rpx;
+}
+.trade {
+  left: 310rpx;
+  width: 300rpx;
+  top: 10rpx;
+  position: relative;
+}
+.person {
+  left: 607rpx;
+  position: relative;
+  width: 200rpx;
+  top: -25rpx;
+}

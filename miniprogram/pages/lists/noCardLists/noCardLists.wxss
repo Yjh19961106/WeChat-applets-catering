@@ -1,0 +1,178 @@
+/* pages/lists/noCardLists/noCardLists.wxss */
+page {
+  background: #fafafa;
+}
+.FirstList {
+  height: 97rpx;
+  width: 100vw;
+  background: white;
+}
+.AllLists ,.NoPayLists ,.NoGetLists {
+  height: 100%;
+  width: 33.3%;
+  float: left;
+  line-height: 97rpx;
+  font-size: 28rpx;
+  color: #333333;
+  text-align: center;
+}
+.Line1 ,.Line2 ,.Line3 {
+  height: 1rpx;
+  width: 140rpx;
+  background: #debb7b;
+  float: left;
+  left: 53rpx;
+  position: relative;
+}
+.Line2 {
+  left: 280rpx;
+}
+.Line3 {
+  left: 540rpx;
+}
+.Line::before ,.Line::after ,.List::before ,.List::after ,.ListMessage::before ,.ListMessage::after{
+  content: "";
+  display: block;
+}
+.Line::after ,.List::after ,.ListMessage::after{
+  clear: both;
+}
+.AllListshow {
+  width: 735rpx;
+  margin-left: 7rpx;
+  height: 248rpx;
+  background: white;
+  margin-top: 15rpx;
+
+
+}
+.List {
+  height: 80rpx;
+  width: 694rpx;
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  color: #333333;
+  line-height: 80rpx;
+  border: 1rpx solid #e5e5e5;
+  border-style: none none solid none;
+}
+.ListNum {
+  float: left;
+}
+.ListCondition ,.ListCondition1 ,.ListCondition2 {
+  float: right;
+  right: 10rpx;
+  position: relative;
+  width: 120rpx;
+  color: #fc1901;
+}
+.ListCondition1{
+  color: #039fd9;
+}
+.ListCondition2 {
+  color: #fca205;
+}
+.ListMessage {
+  height: 84rpx;
+  font-size: 24rpx;
+  color: #555555;
+  line-height: 84rpx;
+}
+.Listmessage {
+  float: left;
+  margin-left: 34rpx;
+}
+.Listmoney {
+  float: right;
+  right: 30rpx;
+  position: absolute;
+  font-size: 30rpx;
+  color: #fbb02c;
+}
+.ListDate {
+  height: 86rpx;
+  font-size: 24rpx;
+  color: #333333;
+  line-height: 86rpx;
+}
+.Listdate {
+  float: left;
+  margin-left: 34rpx;
+}
+.Tap1 ,.Tap2 ,.Tap3{
+  float: right;
+  height: 54rpx;
+  width: 136rpx;
+  color: white;
+  background: linear-gradient(#fcb635 , #fed68d);
+  margin-top: 20rpx;
+  right: 30rpx;
+  position: absolute;
+  line-height: 54rpx;
+  text-align: center;
+  border-radius: 6rpx;
+}
+.Tap2 ,.Tap3 {
+  background: white;
+  color: #333333;
+}
+.Tap2 {
+  border: 1rpx solid #f19149;
+}
+.Tap3 {
+  border: 1rpx solid #a0a0a0;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+
+/* 规则提示层  */
+.isRuleShow{
+    display: block; 
+}
+.isRuleHide{
+    display: none;
+}
+.Toast{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color:rgba(0, 0, 0, .5);
+    z-index: 2;
+    top: 0;
+    left: 0;
+ }
+.ToastContent{
+    
+    width: 80%;
+    height: 215rpx;
+    background: white;
+    margin: 45% auto;
+    border-radius: 6rpx;
+}
+.showtoast {
+  font-size: 26rpx;
+  color: #333333;
+  left: 50rpx;
+  top: 49rpx;
+  position: relative;
+}
+.showbtn {
+  color: #db5d27;
+  font-size: 26rpx;
+  display: inline;
+}
+.Toastcancel {
+  left: 353rpx;
+  top: 97rpx;
+  position: relative;
+}
+.Toastdelete {
+  top: 97rpx;
+  left: 433rpx;
+  position: relative;
+}

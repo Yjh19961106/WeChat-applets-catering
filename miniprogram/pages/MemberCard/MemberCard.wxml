@@ -1,0 +1,80 @@
+<!--pages/MemberCard/MemberCard.wxml-->
+<view class='Body'>
+  <view class='NoPay'>
+    <view class='UserMessage'>
+    <view class='UserImg'>
+      <image class='userimg' style='width:100%;height:100%;'></image>
+    </view>
+    <view class='UserName'>南风箱子</view>
+    <view class='UserPhone'>(133*****331)</view>
+    <view class='UserMember'>您还未开通会员</view>
+  </view>
+  <!-- 一坨文字介绍 -->
+  <view class='Toast'>
+    <view class='ShowToast1'>会员卡优惠介绍</view>
+    <view class='showtoast'>
+      <view class='White1'></view>
+      <view class='ShowToast2'>办理会员卡不收取任何费用，首次充值达到300元即可免费开通会员卡。</view>
+      <view class='White2'></view>
+      <view class='ShowToast3'>会员卡办理成功即可生效，享受商品会员价并在付款时从会员卡中扣除消费金融，会员卡余额不足时，请及时充值，否则，不能使用会员卡支付，即不可享受会员价。</view>
+      <view class='White2'></view>
+      <view class='ShowToast3'>会员卡办理终身有效。</view>
+    </view>
+  </view>
+  <!-- 分割线 -->
+  <view class='WhiteLine'></view>
+  <!-- 申请会员 -->
+  <view class='BeAMember'>
+    <view class='ShowToast1'>申请会员信息填写</view>
+    <view class='InputMessage'>
+      <!-- 输入姓名 -->
+      <view class='Name'>
+        <view class='name'>姓名:</view>
+        <input class='InputName' placeholder='请填写真实姓名'  bindinput="btn1"></input>
+        <view class='line'></view>
+      </view>
+      
+      <!-- 输入联系方式 -->
+      <view class='Phone'>
+        <view class='phone'>联系方式:</view>
+        <input class='InputPhone' placeholder='13351003456'  type="number" maxlength="11" bindinput="btn2"></input>
+        <view class='line'></view>
+      </view>
+      
+      <!-- 输入生日 -->
+      <view class='Birthday'>
+        <view class='birthday'>生日:</view>
+        <input class='InputDay' placeholder='请填写您的出生日期' bindinput="btn3"></input>
+        <view class='line'></view>
+      </view>
+      
+      <!-- 输入验证码、 -->
+      <view class='Code'>
+        <view class='code'>验证码:</view>
+        <input class='InputCode' bindinput="btn4"></input>
+        <button  wx:if='{{send}}'  class='GetCode' bindtap='CountDown'>获取验证码</button> 
+        <button  wx:if='{{alreadysend}}' class='GetCode' bindtap='CountDown'>{{second}}s</button> 
+        <button  wx:if='{{resend}}' class='GetCode' bindtap='CountDown1' >重新发送</button> 
+        <view class='line1'></view>
+      </view>    
+      
+     
+     
+    </view>
+    <!-- 分割线 -->
+ 
+  </view>
+  <view class='WhiteLine1'></view>
+  <!-- 最后按钮 -->
+  <view class='Button1' bindtap='RunRechargedSuccess'>
+    <view class='ShowUser'>
+      <view class='Img'>
+        <image class='img' style='width:100%;height:100%;' src='../img/huangguan.png'></image>
+      </view>
+      <view class='Show'>开通VIP尊享会员</view>
+    </view>
+    <view class='GiveMoney'>立即充值300.00元</view>
+  </view>
+  </view>
+  
+</view>

@@ -1,0 +1,84 @@
+<!--pages/trade/trademoney/trademoney.wxml-->
+<view class='Body'>
+  <view class='Block1'>
+    <view class='Show1'>此数据为汇总数据</view>
+    <view class='Show2'>
+      <view class='SAllMoney' bindtap='RunTotalMoney'>总交易额</view>
+      <view class='SMoney'>盈利交易额</view>
+    </view>
+    
+    <view class='Show3' wx:for="{{allmoney}}"wx:key>
+      <view>
+      
+        <view class='Sallmoney' catchtap='RunTotalMoney' data-m="{{item.m}}" >
+        <navigator url="../totalmoney/totalmoney?m={{item.m}}">{{item.m}}元</navigator></view>
+        <view class='Smoney'>{{item.t}}元</view>
+      
+      </view>
+    </view>
+  </view>
+
+  <view class='Block2'>
+    <view class='List1'>
+      <view class="AllMoney {{biao==1?'select':'unfine'}}" id='a1' data-biao='1' bindtap='onChangeShowState'>总交易额</view>
+      <view class="Money {{biao==2?'select':'unfine'}}" id='a2' data-biao='2' bindtap='onChangeShowState'>盈利交易额</view>
+    </view>
+    <view class='Line'>
+      <view class="Line1 {{list==1?'show':'hide'}}" data-list='1'></view>
+      <view class="Line2 {{list==2?'show':'hide'}}" data-list='2'></view>
+    </view>
+  </view>
+
+  <view class='Block3'>
+    
+    <view class='date'>时间日期</view>
+    <view class='check' bindtap='InputDate' >
+      <image class='checkimg' style='width:100%;height:100%;'></image>
+    </view>
+  
+    <view class='list'>订单编号</view>
+
+    <view class='money'>盈利金额</view>
+  </view>
+
+  <view class='Block4'>
+    <view class='Item' wx:for="{{List}}" wx:key>
+      <view class='Date'>{{item.date}}</view>
+      <view class='Num'>{{item.num}}</view>
+      <view class='Mon'>￥{{item.money}}</view>
+    </view>
+  
+  </view>
+  
+
+  <!-- 隐藏的内容 悬浮框 -->
+  <view class="Toast {{isRuleTrue?'isRuleShow':'isRuleHide'}}" data-list1='2'>
+  <view class='ToastContent'>
+  
+   <!-- 分割线 -->
+    <view class='CutLine1'></view>
+    <!-- 用户输入几月几日获取信息 -->
+    <view class='InputLine'>
+      <!-- 输入开始月 -->
+      <input class='StartMonth'></input>
+      <view class='Month1'>月</view>
+      <!-- 输入开始日 -->
+      <input class='StartDay'></input>
+      <view class='Day1'>日</view>
+      <view class='Until'>——</view>
+      <!-- 输入结束月 -->
+      <input class='FinishMonth'></input>
+      <view class='Month1'>月</view>
+      <!-- 输入结束日 -->
+      <input class='FinishDay'></input>
+      <view class='Day1'>日</view>
+    </view>
+    <!-- 确定按钮 -->
+    <view class='ButtonLine'>
+      <button class='Sure' bindtap='BeSure' id='b2'>确定</button>
+    </view>
+  
+  </view>
+   
+  </view>
+</view>

@@ -1,0 +1,56 @@
+/* pages/Join/Join.wxss */
+.Img {
+  width: 750rpx;
+  height: 975rpx;
+  border: 1rpx solid black;
+  background: bisque;
+}
+.Show {
+  margin-top: 44rpx;
+  margin-left: 55rpx;
+  font-size: 36rpx;
+}
+.UserName ,.UserPhone {
+  font-size: 27rpx;
+  margin-top: 44rpx;
+}
+.UserPhone {
+  margin-top: 22rpx;
+}
+.line {
+  width: 640rpx;
+  margin-left: 55rpx;
+  height: 1rpx;
+  background: #dcdcdc;
+}
+.Name ,.Phone{
+  float: left;
+  margin-left: 55rpx;
+}
+.UserName::before ,.UserName::after ,.UserPhone::before ,.UserPhone::after{
+  content: "";
+  display: table;
+}
+.UserName::after ,.UserPhone::after{
+  clear: both;
+}
+.name{
+  margin-left: 15rpx;
+  margin-top: -8rpx;
+}
+.phone {
+  margin-left: 15rpx;
+  margin-top: -8rpx;
+}
+.Submit {
+  width: 580rpx;
+  margin-left: 85rpx;
+  height: 87rpx;
+  font-size: 30rpx;
+  color: white;
+  background: #ffb841;
+  margin-top: 25rpx;
+  line-height: 87rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}

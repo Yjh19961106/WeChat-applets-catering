@@ -1,0 +1,234 @@
+/* pages/lists/waitPayTC/waitPayTC.wxss */
+page {
+  background: #fafafa;
+}
+.Block1 ,.Block2{
+  width: 720rpx;
+  height: 241rpx;
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+  position: relative;
+  background: white;
+}
+.Block2 {
+  height: 410rpx;
+}
+.Block3 {
+  height: 85rpx;
+  margin-top: 20rpx;
+  background: white;
+  font-size: 24rpx;
+  color: #333333;
+  line-height: 85rpx;
+
+}
+.Block4 ,.Block5 {
+  background: white;
+  margin-top: 20rpx;
+  height: 195rpx;
+}
+.Block5 {
+  margin-top: 12rpx;
+  color: #333333;
+  font-size: 24rpx;
+}
+.time1 ,.time2 ,.time3 ,.time4 {
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 10rpx;
+  background: black;
+  font-size: 25rpx;
+  color: white;
+  text-align: center;
+  line-height: 36rpx;
+  float: left;
+}
+.and {
+  float: left;
+  margin-top: -5rpx;
+}
+.time1 {
+  margin-left: 280rpx;
+}
+.Time::before ,.Time::after ,.User::before ,.User::after ,.StoreName::before ,.StoreName::after ,.BuyList::before ,.BuyList::after ,.Things::before ,.Things::after{
+  content: "";
+  display: table;
+}
+.Time::after ,.User::after ,.StoreName::after ,.BuyList::after ,.Things::after{
+  clear: both;
+}
+
+
+.UserImg {
+  width: 67rpx;
+  height: 67rpx;
+  border: 1rpx solid red;
+  left: 30rpx;
+  border-radius: 50%;
+  position: absolute;
+  float: left;
+  top: 60rpx;
+}
+.UserName {
+  left: 117rpx;
+  top: 77rpx;
+  font-size: 28rpx;
+  color: #333333;
+  position: absolute;
+  float: left;
+}
+.UserPhoneImg {
+  width: 24rpx;
+  height: 24rpx;
+  border: 1rpx solid red;
+  left: 370rpx;
+  top: 80rpx;
+  position: absolute;
+  float: left;
+}
+.UserPhone {
+  font-size: 28rpx;
+  color: #333333;
+  top: 75rpx;
+  left: 425rpx;
+  position: absolute;
+  float: left;
+}
+
+
+.message {
+  margin-left:  107rpx;
+  color: #333333;
+  font-size: 28rpx;
+  top: 156rpx;
+  position: absolute;
+}
+.LeftImg ,.RightImg {
+  width: 130rpx;
+  height: 10rpx;
+  border: 1rpx solid black;
+  float: left;
+  margin-top: 55rpx;
+}
+.Name {
+  font-size: 30rpx;
+  color: #333333;
+  float: left;
+  margin-top: 40rpx;
+}
+.buylist ,.buything {
+  font-size:  24rpx;
+  color: #333333;
+  float: left;
+  margin-top: 33rpx;
+}
+.buylist {
+  margin-left: 29rpx;
+}
+.buything {
+  margin-left: 490rpx;
+}
+.CutLine {
+  margin-left: 30rpx;
+  width: 650rpx;
+  margin-top: 16rpx;
+  border: 1rpx dashed #aaaaaa;
+}
+.Things{
+  height: 35rpx;
+  margin-top: 20rpx;
+  margin-left: 35rpx;
+  color: #333333;
+  font-size: 28rpx;
+}
+.things ,.thingsnum ,.thingsmoney {
+  float: left;
+}
+.thingsnum {
+  left: 340rpx;
+  position: absolute;
+  font-size: 24rpx;
+}
+.thingsmoney {
+  color: #ff6c00;
+  font-size: 26rpx;
+  right: 30rpx;
+  position: absolute;
+}
+.spread {
+  color: #333333;
+  font-size: 24rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.spreadImg {
+  width: 17rpx;
+  height: 14rpx;
+  border: 1rpx solid black;
+  left: 388rpx;
+  top: -24rpx;
+  position: relative;
+}
+.PS {
+  float: left;
+  margin-left: 30rpx;
+}
+.TrueMoney {
+  height: 65rpx;
+  font-size: 24rpx;
+  color: #333333;
+  line-height: 65rpx;
+}
+.truemoney ,.tmoney {
+  float: left;
+  margin-left: 30rpx;
+}
+.tmoney {
+  right: 50rpx;
+  position: absolute;
+  color: #ff6c00;
+}
+.ListNum ,.ListTime ,.ListPay {
+  height: 65rpx;
+  line-height: 65rpx;
+}
+.listnum ,.listtime ,.listpay {
+  float: left;
+  margin-left: 30rpx;
+}
+.list_Date {
+  float: left;
+}
+.list_time {
+  left: 20rpx;
+  position: relative;
+}
+.Block6 {
+  height: 92rpx;
+  background: white;
+  line-height: 92rpx;
+  margin-top: 11rpx;
+}
+.Cheaper {
+  font-size: 24rpx;
+  color: #333333;
+  float: left;
+  margin-left: 30rpx;
+}
+.AllMoney{
+  float: left;
+  font-size: 28rpx;
+  color: #333333;
+  left: 249rpx;
+  position: absolute;
+}
+.Pay {
+  width: 226rpx;
+  color: #333333;
+  font-size: 30rpx;
+  text-align: center;
+  background: #ffb131;
+  float: left;
+  right: 0;
+  position: absolute;
+}

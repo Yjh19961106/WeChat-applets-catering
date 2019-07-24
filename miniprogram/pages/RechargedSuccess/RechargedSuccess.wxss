@@ -1,0 +1,24 @@
+/* pages/RechargedSuccess/RechargedSuccess.wxss */
+page {
+  background: #f5f4f3;
+}
+.Img {
+  width: 113rpx;
+  height: 109rpx;
+  margin-top: 172rpx;
+  margin-left: 318.5rpx;
+}
+.Show1 ,.Show2 {
+  font-size: 35rpx;
+  text-align: center;
+  color: #ea6e00;
+  margin-top: 30rpx;
+}
+.Show2 {
+  font-size: 27rpx;
+  margin-top: 20rpx;
+}
+.Back {
+  width: 180rpx;
+  margin-top: 300rpx;
+}

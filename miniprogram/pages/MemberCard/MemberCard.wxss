@@ -1,0 +1,148 @@
+/* pages/MemberCard/MemberCard.wxss */
+page {
+  width: 100vm;
+  height: 100vm;
+}
+.UserMessage {
+  width: 750rpx;
+  height: 222rpx;
+  background: #fff8b0;
+  font-size: 31rpx;
+  border: 1rpx solid #fff8b0;
+}
+.UserImg {
+  width: 133rpx;
+  height: 133rpx;
+  border-radius: 50%;
+  margin-left: 40rpx;
+  border: 1rpx solid black;
+  margin-top: 50rpx;
+  float: left;
+}
+.UserName ,.UserPhone{ 
+  margin-left: 30rpx;
+  margin-top: 80rpx;
+  display: inline-block
+}
+.UserPhone {
+  margin-left: 10rpx;
+}
+.UserMember {
+  font-size: 24rpx;
+  margin-left: 205rpx;
+  margin-top: 10rpx;
+  display: block;
+}
+.Toast {
+  width: 750rpx;
+  height: 400rpx;
+  border: 1rpx solid white;
+}
+.ShowToast1 {
+  font-size: 29rpx;
+  margin-left: 28rpx;
+  margin-top: 40rpx;
+}
+.showtoast {
+  width: 710rpx;
+  margin-left: 50rpx;
+  border: 1rpx solid white;
+}
+.White1 ,.White2 {
+  width: 42rpx;
+  height: 25rpx;
+  float: left;
+  /* border: 1rpx solid black; */
+  margin-top: 20rpx;
+}
+.ShowToast2 ,.ShowToast3 {
+  font-size: 23rpx;
+  margin-top: 20rpx;
+  width: 600rpx;
+}
+.WhiteLine ,.WhiteLine1{
+  width: 750rpx;
+  height: 10rpx;
+  background: #f5f4f3;
+}
+.WhiteLine1 {
+  height: 12rpx;
+}
+.BeAMember {
+  width: 750rpx;
+  height: 400rpx;
+  font-size: 26rpx;
+}
+.line ,.line1{
+  background: #dcdcdc;
+  height: 1rpx;
+  width: 694rpx;
+  margin-left: 28rpx;
+}
+.line1 {
+  margin-top: 10rpx;
+}
+.Name ,.Phone ,.Birthday ,.Code {
+  height: 80rpx;
+  border: 1rpx solid white;
+  font-size: 28rpx;
+}
+.name ,.phone ,.birthday ,.code {
+  margin-left: 28rpx;
+  margin-top: 25rpx;
+  float: left;
+}
+.InputName ,.InputPhone ,.InputDay ,.InputCode {
+  margin-top: 16rpx;
+  width: 250rpx;
+  left: 30rpx;
+  position: relative;
+} 
+.InputCode {
+  float: left;
+}
+.GetCode {
+  width: 156rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  font-size: 25rpx;
+  background: #b5b5b5;
+  text-align: center;
+  padding: 0;
+  color: white;
+  margin-left: 570rpx;
+  
+}
+.Button1 {
+  width: 750rpx;
+  height: 222rpx;
+}
+.ShowUser {
+  width: 750rpx;
+  height: 100rpx;
+}
+.Img {
+  width: 62rpx;
+  height: 54rpx;
+  margin-left: 33rpx;
+  margin-top: 18rpx;
+  float: left;
+}
+.Show {
+  margin-left: 15rpx;
+  margin-top: 40rpx;
+  font-size: 30rpx;
+  float: left;
+}
+.GiveMoney {
+  width: 686rpx;
+  height: 100rpx;
+  font-size: 31rpx;
+  margin-left: 32rpx;
+  color: white;
+  border-radius: 10rpx;
+  background: #fcbb2d;
+  line-height: 100rpx;
+  text-align: center;
+  padding: 0;
+}

@@ -1,0 +1,327 @@
+/* pages/Pay/wxPay/wxPay.wxss */
+page {
+  background: #fafafa;
+}
+.Block1 ,.Block2{
+  width: 100vw;
+  height: 348rpx;
+  background: white;
+}
+.Block2 {
+  height: 395rpx;
+  margin-top: 25rpx;
+  margin-left: 15rpx;
+
+}
+.Time::before ,.Time::after ,.User::before ,.User::after ,.StoreName::before ,.StoreName::after ,.BuyList::before ,.BuyList::after ,.Things::before ,.Things::after{
+  content: "";
+  display: table;
+}
+.Time::after ,.User::after ,.StoreName::after ,.BuyList::after ,.Things::after{
+  clear: both;
+}
+.UserImg {
+  width: 67rpx;
+  height: 67rpx;
+  border: 1rpx solid red;
+  left: 28rpx;
+  top: 28rpx;
+  border-radius: 50%;
+  position: absolute;
+  float: left;
+}
+.UserName {
+  left: 112rpx;
+  top: 51rpx;
+  position: absolute;
+  font-size: 28rpx;
+  color: #333333;
+  float: left;
+  border: 1rpx solid #aaaaaa;
+  border-style: none none solid none;
+}
+.UserPhoneImg {
+  width: 24rpx;
+  height: 24rpx;
+  border: 1rpx solid red;
+  left: 371rpx;
+  position: absolute;
+  top: 52rpx;
+  float: left;
+}
+.UserPhone {
+  font-size: 28rpx;
+  color: #333333;
+  top: 53rpx;
+  left: 425rpx;
+  position: absolute;
+  float: left;
+  border: 1rpx solid #aaaaaa;
+  border-style: none none solid none;
+}
+.message {
+  left: 42rpx;
+  color: #333333;
+  font-size: 28rpx;
+  top: 155rpx;
+  position: absolute;
+}
+.Pay {
+  top: 259rpx;
+  left: 42rpx;
+  position: absolute;
+  color: #666666;
+  font-size: 24rpx;
+}
+.radio-group {
+  width: 600rpx;
+  height: 40rpx;
+  left: 324rpx;
+  top: -10rpx;
+  position: absolute;
+  
+}
+.radio {
+  display: inline-block;
+  margin-left: 23rpx;
+  line-height: 40rpx;
+}
+/* 单选框大小 */
+radio .wx-radio-input{
+  border-radius: 50%; 
+  width: 28rpx;
+  height: 28rpx;
+  border: 1rpx solid #fc7d31;
+}
+
+/* 选中后的样式 （可根据设计稿需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+    border-radius: 50%;
+    width: 44rpx; 
+    height: 44rpx; 
+    line-height: 44rpx;
+    text-align: center;
+    font-size: 26rpx; /* 对勾大小 26rpx */
+    color:#fff; /* 对勾颜色 */
+    background: #fc7d31;
+
+}
+.Block3 {
+  height: 85rpx;
+  margin-top: 20rpx;
+  background: white;
+  font-size: 24rpx;
+  color: #333333;
+  line-height: 85rpx;
+
+}
+.Block4 ,.Block5 {
+  background: white;
+  margin-top: 20rpx;
+  height: 195rpx;
+}
+.Block5 {
+  margin-top: 12rpx;
+  color: #333333;
+  font-size: 24rpx;
+}
+.Time::before ,.Time::after ,.User::before ,.User::after ,.StoreName::before ,.StoreName::after ,.BuyList::before ,.BuyList::after ,.Things::before ,.Things::after{
+  content: "";
+  display: table;
+}
+.Time::after ,.User::after ,.StoreName::after ,.BuyList::after ,.Things::after{
+  clear: both;
+}
+
+.LeftImg ,.RightImg {
+  width: 130rpx;
+  height: 10rpx;
+  border: 1rpx solid black;
+  float: left;
+  margin-top: 55rpx;
+}
+.Name {
+  font-size: 30rpx;
+  color: #333333;
+  float: left;
+  margin-top: 40rpx;
+}
+.buylist ,.buything {
+  font-size:  24rpx;
+  color: #333333;
+  float: left;
+  margin-top: 33rpx;
+}
+.buylist {
+  margin-left: 29rpx;
+}
+.buything {
+  margin-left: 490rpx;
+}
+.CutLine {
+  margin-left: 30rpx;
+  width: 650rpx;
+  margin-top: 16rpx;
+  border: 1rpx dashed #aaaaaa;
+}
+.Things{
+  height: 35rpx;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  color: #333333;
+  font-size: 28rpx;
+}
+.things ,.thingsnum ,.thingsmoney {
+  float: left;
+}
+.thingsnum {
+  left: 360rpx;
+  position: absolute;
+  font-size: 24rpx;
+}
+.thingsmoney {
+  color: #ff6c00;
+  font-size: 26rpx;
+  right: 50rpx;
+  position: absolute;
+}
+.spread {
+  color: #333333;
+  font-size: 24rpx;
+  left: 350rpx;
+  position: absolute;
+  margin-top: 20rpx;
+}
+.spreadImg {
+  width: 17rpx;
+  height: 14rpx;
+  border: 1rpx solid black;
+  left: 398rpx;
+  top: 27rpx;
+  position: relative;
+}
+.PS {
+  float: left;
+  margin-left: 30rpx;
+}
+.TrueMoney {
+  height: 65rpx;
+  font-size: 24rpx;
+  color: #333333;
+  line-height: 65rpx;
+}
+.truemoney ,.tmoney {
+  float: left;
+  margin-left: 30rpx;
+}
+.tmoney {
+  right: 50rpx;
+  position: absolute;
+  color: #ff6c00;
+}
+.ListNum ,.ListTime ,.ListPay {
+  height: 65rpx;
+  line-height: 65rpx;
+}
+.listnum ,.listtime ,.listpay {
+  float: left;
+  margin-left: 30rpx;
+}
+.list_Date {
+  float: left;
+}
+.list_time {
+  left: 20rpx;
+  position: relative;
+}
+.Block6 {
+  height: 95rpx;
+  background: white;
+  line-height: 95rpx;
+  margin-top: 15rpx;
+}
+.Cheaper {
+  font-size: 24rpx;
+  color: #333333;
+  float: left;
+  margin-left: 30rpx;
+}
+.AllMoney{
+  float: left;
+  font-size: 28rpx;
+  color: #333333;
+  left: 249rpx;
+  position: absolute;
+}
+.Pay1 {
+  width: 226rpx;
+  color: #333333;
+  font-size: 30rpx;
+  text-align: center;
+  background: #ffb131;
+  float: left;
+  left: 527rpx;
+  top: 1110rpx;
+  right: 0;
+  position: absolute;
+}
+
+/* 规则提示层  */
+.isRuleShow{
+    display: block; 
+}
+.isRuleHide{
+    display: none;
+}
+.Toast{
+    height: 92%;
+    width: 100%;
+    position: fixed;
+    background-color:rgba(0, 0, 0, .5);
+    z-index: 2;
+    top: 0;
+    left: 0;
+ }
+.ToastContent{
+    padding: 20rpx 0;
+    width: 80%;
+    height: 640rpx;
+    background: white;
+    margin: 40% auto;
+    border-radius: 20rpx;
+    
+}
+.ToastShow {
+  width: 385rpx;
+  height: 36rpx;
+  font-size:26rpx;
+  text-align: left;
+  color: #555555;
+  line-height: 36rpx; 
+  top: 396rpx;
+  left: 95rpx;
+  position: relative;
+}
+.btnCard {
+  width: 257rpx;
+  height: 54rpx;
+  border: 1rpx solid #ffbc52;
+  color: #444444;
+  font-size: 26rpx;
+  line-height: 54rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  left: 155rpx;
+  top: 520rpx;
+  position: relative;
+}
+.Hide {
+  top: -135rpx;
+  left: 570rpx;
+  border: 1rpx solid black;
+  border-radius: 50%;
+  width:  44rpx;
+  height: 44rpx;
+  position: relative;
+  background: white;
+}

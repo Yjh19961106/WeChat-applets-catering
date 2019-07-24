@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/lists/noCardLists/noCardLists",
+    "pages/trade/totalmoney/totalmoney",
+    "pages/trade/trademoney/trademoney",
+    "pages/lists/waitZQ/waitZQ",
+    "pages/Pay/paySuccess/paySuccess",
+    "pages/MemberCard/MemberCard",
+    "pages/Pay/wxPay/wxPay",
+    "pages/lists/waitWX/waitWX",
+    "pages/lists/waitPayTC/waitPayTC",
+    "pages/lists/waitZQC/waitZQC",
+    "pages/lists/noGetC/noGetC",
+    "pages/lists/noGet/noGet",
+    "pages/lists/finishC/finishC",
+    "pages/lists/finish/finish",
+    "pages/Order/Order",
+    "pages/RechargedRecord/RechargedRecord",
+    "pages/Join/Join",
+    "pages/Stores/Stores",
+    "pages/RechargedSuccess/RechargedSuccess",
+    "pages/UserHomePage/UserHomePage",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "美食一号店",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "店铺",
+        "iconPath": "pages/img/dianpuweixuanzhong.png",
+        "selectedIconPath": "pages/img/dianpuxuanzhong.png"
+      },
+      {
+        "pagePath": "pages/UserHomePage/UserHomePage",
+        "text": "我的",
+        "iconPath": "pages/img/wodeweixuanzhong.png",
+        "selectedIconPath": "pages/img/wodexuanzhong.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

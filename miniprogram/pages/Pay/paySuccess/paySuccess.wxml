@@ -1,0 +1,26 @@
+<!--pages/Pay/paySuccess/paySuccess.wxml-->
+<view class='Body'>
+  <view class='Block1'>
+    <view class='Img' >
+      <icon type="success" size="100" color='#debb7b' class='img'/>
+    </view>
+    <view class='SuccessToast'>订单支付成功</view>
+  </view>
+
+  <view class='Block2'>
+    <view class='ListShow'>订单信息</view>
+    <view class='ListNum'>订单号：3549846215346</view>
+    <view class='ListTime'>下单时间：05：20：03</view>
+    <view class='ListMoney'>交易金额：￥300.00</view>
+    <view class='ListPay'>支付方式：微信/会员</view>
+
+    <view class='ListCall'>
+      <view class='PhoneImg'>
+        <image class='phoneimg' style='width:100%;height:100%;'></image>
+      </view>
+      <view class='ShowListCall'>致电商家</view>
+    </view>
+  </view>
+
+
+</view>

@@ -1,0 +1,432 @@
+/* pages/Order/Order.wxss */
+.UserChoose {
+  width: 100vw;
+  height: 170rpx;
+  background: linear-gradient(#ffbc4c , #ffd286);
+}
+.Line1 {
+  height: 95rpx;
+}
+.EatIn ,.Order ,.Distribution {
+  width: 33.3%;
+  float: left;
+  height: 95rpx;
+  font-size: 26rpx;
+  color: white;
+}
+.eatinshow ,.ordershow ,.distributionshow {
+  text-align: center;
+  line-height: 95rpx;
+  display: block;
+}
+.UserTouch1 ,.UserTouch2 ,.UserTouch3 {
+  width: 20rpx;
+  height: 7rpx;
+  border: 1rpx solid rosybrown;
+  margin-top: -50rpx;
+  margin-left: 156rpx;
+}
+.UserTouch2 {
+  margin-left: 182rpx;
+}
+.CutLine {
+  margin-left: 30rpx;
+  width: 690rpx;
+  border: 1rpx dashed white;
+}
+.BLine1 ,.BLine2 ,.BLine3 {
+  top: 95rpx;
+  position: absolute;
+  width: 137rpx;
+  height: 5rpx;
+  background: #ff9f00;
+  left: 57rpx;
+}
+.BLine2 {
+  left: 310rpx;
+}
+.BLine3 {
+  left: 570rpx;
+}
+.Line2 {
+  display: inline-block;
+  height: 90rpx;
+}
+
+.Seat1 ,.Seat2 ,.SeatNum ,.Time  ,.Check{
+  font-size: 27rpx;
+  float: left;
+  line-height: 70rpx;
+}
+.Time {
+  font-size: 20rpx;
+  margin-left: 30rpx;
+}
+.Seat1 {
+  margin-left: 50rpx;
+}
+.SeatNum {
+  width: 71rpx;
+  height: 30rpx;
+  border: 1rpx solid black;
+  margin-top: 8rpx;
+}
+.Seat2 {
+  margin-left: 23rpx;
+}
+.Check {
+  width: 46rpx;
+  height: 46rpx;
+  border: 1rpx solid black;
+  margin-top: 10rpx;
+  margin-left: 120rpx;
+}
+.Left {
+  width: 145rpx;
+  float: left;
+  height: 935rpx;
+}
+.Right {
+  float: left;
+  margin-left: 18rpx;
+  height: 935rpx;
+  width: 589.5rpx;
+}
+.SetMeal ,.Full ,.Half ,.Material ,.Meat ,.SpecialDish ,.HotPotDish ,.Pellet ,.Mushroom ,.Bean ,.Vegetable ,.Drink ,.SpecialDrink {
+  height: 90rpx;
+  font-size: 25rpx;
+  text-align: center;
+  display: block;
+  line-height: 90rpx;
+}
+.Show1 {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
+.clear{
+  clear: both;
+  overflow: hidden;
+}
+navigator{
+  display:inline;
+}
+.list_item {
+  height: 172rpx;
+  width: 570rpx;
+}
+.Img {
+  width:205rpx;
+  height: 150rpx;
+  float: left; 
+}
+.Info {
+  width:64%;
+  float:right;
+  height:100%;
+  position:relative;
+  font-size: 24rpx;
+}
+.Title {
+  font-size: 29rpx;
+  margin-left: 25rpx;
+}
+.VIP ,.User  {
+  float: left;
+  margin-left: 25rpx;
+}
+.VIP ,.Price1 {
+  margin-top: 35rpx;
+}
+.User ,.Price2  {
+  margin-top: 10rpx;
+}
+.Price1 {
+  color: #ec0404;
+}
+.Price2 {
+  color: #ff8022;
+  font-size: 20rpx;
+  margin-top: 14rpx;
+  float: left;
+}
+.Run {
+  float: left;
+  width: 126rpx;
+  height: 46rpx;
+  border-radius: 23rpx;
+  color: white;
+  background: #ff9f00;
+  text-align: center;
+  line-height: 46rpx;
+  margin-left: 30rpx;
+}
+.Run2 {
+  float: left;
+  width: 40rpx;
+  height: 40rpx;
+  background: #ff9f00;
+  border-radius: 50%;
+  left: 270rpx;
+  top: 85rpx;
+  position: absolute;
+
+}
+.detail-nav {
+  width: 750rpx;
+  height: 95rpx;
+  position: fixed;
+  bottom: 0;
+  background: white;
+}
+.Cart {
+  width: 94rpx;
+  height: 94rpx;
+  border-radius: 47rpx;
+  
+  background: #ff9f00;
+  float: left;
+  margin-left: 50rpx;
+}
+.ShowTotal ,.Money {
+  font-size: 24rpx;
+  line-height: 100rpx;
+  float: left;
+}
+.ShowTotal {
+  margin-left: 30rpx;
+}
+.Sure {
+  width: 270rpx;
+  height: 100rpx;
+  background: #ffb232;
+  margin-left: 480rpx; 
+  font-size: 35rpx;
+  color: white;
+  line-height: 100rpx;
+  padding: 0;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.SetMealselect {
+  color: #debb7b;
+  font-weight: normal;
+  background: #ffffff;
+  border: 1rpx solid #ff9f00;
+  border-style: none none solid none;
+  height: 90rpx;
+  font-size: 25rpx;
+  text-align: center;
+  display: block;
+  line-height: 90rpx;
+}
+.select {
+  color: #debb7b;
+  font-weight: normal;
+  background: #ffffff;
+  border: 1rpx solid #ff9f00;
+  border-style: none none solid none;
+}
+.ruletasteselect1 {
+  width: 236rpx;
+  height: 49rpx;
+  font-size: 24rpx;
+  line-height: 49rpx;
+  color: #666666;
+  text-align: center;
+  margin-left: 28rpx;
+  margin-top: 22rpx;
+  float: left;
+  border: 1rpx solid #ff9f00;
+}
+.select1{
+  width: 236rpx;
+  height: 49rpx;
+  font-size: 24rpx;
+  line-height: 49rpx;
+  color: #666666;
+  text-align: center;
+  margin-left: 28rpx;
+  margin-top: 22rpx;
+  float: left;
+  border: 1rpx solid #ff9f00;
+}
+
+/* 规则提示层  */
+.isRuleShow{
+    display: block; 
+}
+.isRuleHide{
+    display: none;
+}
+.Toast{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color:rgba(0, 0, 0, .5);
+    z-index: 2;
+    top: 0;
+    left: 0;
+ }
+.ToastContent{
+    padding: 20rpx 0;
+    width: 80%;
+    height: 660rpx;
+    background: white;
+    margin: 40% auto;
+    border-radius: 20rpx;
+    
+}
+.ruleName {
+  font-size: 28rpx;
+  left: 28rpx;
+  top: 23rpx;
+  position: relative;
+}
+.ruleVIP ,.rulePrice1 {
+  font-size: 27rpx;
+  margin-left: 28rpx;
+  margin-top: 45rpx;
+}
+.ruleVIP ,.ruleUser {
+  float: left;
+}
+.rulePrice1 {
+  left: 116rpx;
+  color: #ec0404;
+}
+.ruleUser ,.rulePrice2 ,.ruleTaste{
+  font-size: 25rpx;
+  margin-left: 28rpx;
+  margin-top: 5rpx;
+}
+.rulePrice2 {
+  left: 116rpx;
+  color: #ff8022;
+}
+.ruleTaste {
+  margin-top: 30rpx;
+}
+.ruletaste {
+  border: 1rpx solid #b5b5b5;
+  width: 236rpx;
+  height: 49rpx;
+  font-size: 24rpx;
+  line-height: 49rpx;
+  color: #666666;
+  text-align: center;
+  margin-left: 28rpx;
+  margin-top: 22rpx;
+  float: left;
+}
+/* 购物车 */
+.Cart1{
+  height: 79rpx;
+  width: 80%;
+  
+  top: 918rpx;
+  position: fixed;
+  border-radius: 20rpx;
+}
+.Minus ,.Plus {
+  width: 40rpx;
+  height: 40rpx;
+  border: 1rpx solid black;
+  margin-left: 48rpx;
+  margin-top: 15rpx;
+  float: left;
+}
+.Count {
+  font-size: 26rpx;
+  margin-top: 20rpx;
+  color: #333333;
+  margin-left: 48rpx;
+  float: left;
+}
+.AddCart {
+  width: 201rpx;
+  height: 82rpx;
+  background: #ffb12f;
+  color: #444444;
+  font-size: 28rpx;
+  line-height: 81rpx;
+  text-align: center;
+  margin-left: 400rpx;
+  border-radius: 20rpx;
+}
+.Hide {
+  width: 35rpx;
+  height: 35rpx;
+  left: 605rpx;
+  top: 340rpx;
+  position: fixed;
+  border: 1rpx solid red;
+}
+.good_box {
+   width: 40rpx;
+  height: 40rpx;
+  position: fixed;
+  border-radius: 50%;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  z-index: 99;
+  border: 1px solid #ff9f00(0, 116, 255, 0.61);
+  background: rgba(120, 188, 255, 0.2);
+}
+.good_box image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.detail-num {
+  width: 30rpx;
+  height: 30rpx;
+  left: 120rpx;
+  position: fixed;
+  font-size: 20rpx;
+  color: #444444;
+  border:1rpx solid black;
+  line-height: 30rpx;
+  text-align: center;
+  border-radius: 50%;
+  background: white;
+}
+
+.mask-layer {
+  width: 100%;
+  height: 92%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+.pop-common {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 94rpx;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+}
+.CartLists {
+  width: 100vw;
+  height: 105rpx;
+}
+.CartListsName {
+  color: #333333;
+  font-size: 26rpx;
+  margin-left:66rpx;
+
+}
